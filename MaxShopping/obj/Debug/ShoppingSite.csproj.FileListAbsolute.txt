@@ -16,3 +16,11 @@ D:\ShoppingSite\MaxShopping\MaxShopping\bin\System.Web.Mvc.xml
 D:\ShoppingSite\MaxShopping\MaxShopping\obj\Debug\ShoppingSite.csprojResolveAssemblyReference.cache
 D:\ShoppingSite\MaxShopping\MaxShopping\obj\Debug\MaxShopping.dll
 D:\ShoppingSite\MaxShopping\MaxShopping\obj\Debug\MaxShopping.pdb
+D:\ShoppingSite\MaxShopping\MaxShopping\bin\Antlr3.Runtime.dll
+D:\ShoppingSite\MaxShopping\MaxShopping\bin\Microsoft.Web.Infrastructure.dll
+D:\ShoppingSite\MaxShopping\MaxShopping\bin\Newtonsoft.Json.dll
+D:\ShoppingSite\MaxShopping\MaxShopping\bin\System.Web.Optimization.dll
+D:\ShoppingSite\MaxShopping\MaxShopping\bin\WebGrease.dll
+D:\ShoppingSite\MaxShopping\MaxShopping\bin\Antlr3.Runtime.pdb
+D:\ShoppingSite\MaxShopping\MaxShopping\bin\Newtonsoft.Json.xml
+D:\ShoppingSite\MaxShopping\MaxShopping\bin\System.Web.Optimization.xml
