@@ -8,10 +8,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Smart Bazzar</title>
-   
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <title>Smart Bazzar</title>
+    @Styles.Render("~/bundle/Styles")
+    @Styles.Render("~/bundles/bootsrapStyle")
+ 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
@@ -51,7 +52,7 @@
                             <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
                             <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
                             <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
-                            <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                            <li><a href='@Url.Action("Login","Login")'><i class="fa fa-user"></i> Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -567,12 +568,16 @@
         </div>
     </div> <!-- End footer bottom area -->
     <!-- Latest jQuery form server -->
+
+
     <script src="https://code.jquery.com/jquery.min.js"></script>
 
     <!-- Bootstrap JS form CDN -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <!-- jQuery sticky menu -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundle/bootstrap")
+    @*<!-- jQuery sticky menu -->
     <script src="~/js/owl.carousel.min.js"></script>
     <script src="~/js/jquery.sticky.js"></script>
 
@@ -584,6 +589,6 @@
 
     <!-- Slider -->
     <script type="text/javascript" src="~/js/bxslider.min.js"></script>
-    <script type="text/javascript" src="~/js/script.slider.js"></script>
+    <script type="text/javascript" src="~/js/script.slider.js"></script>*@
 </body>
 </html>
