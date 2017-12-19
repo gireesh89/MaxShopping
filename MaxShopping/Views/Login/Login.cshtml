@@ -4,12 +4,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
 <div class="page login-page">
     <div class="page-title" align="center">
         <h1>Login to SmartBazzar</h1>
     </div>
 </div> 
-
+<script type="text/javascript" src="~/js/Login.js"></script>
 <div class="row">
     <div class="col-lg-12 ">
         <div class="panel-primary" align="center">
@@ -34,7 +35,8 @@
                             @Html.CheckBoxFor(model => model.RememberMe, new { @class="checkbox checkbox-inline"})
                         </div> 
                         <div class="form-group input-group">
-                            <input type="Submit" value="Login" class="btn btn-success" />
+                            <input type="Submit" value="Login" class="btn btn-success" />&nbsp;&nbsp;
+                            <input type="button" value="Register" class="btn btn-success" onclick="return newPage('@Url.Action("Register","Registration")')" />
                         </div>
                     }
                 </div>
