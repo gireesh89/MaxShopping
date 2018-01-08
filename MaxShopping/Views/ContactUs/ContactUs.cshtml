@@ -1,4 +1,4 @@
-﻿
+﻿@model ShoppingSite.Models.Feedback
 @{
     ViewBag.Title = "ContactUs";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -13,14 +13,40 @@
             <div class="panel-primary" align="left">
                 <div class="panel-body">
                     <div class="header">Contact Us</div>
+                    
                 </div>
             </div>
 
         </div>
         <div class="col-lg-6">
-            <div class="panel-primary" align="right">
+            <div class="panel-primary" align="right" style="border:1px solid black">
                 <div class="panel-body">
-                    <div class="header">Feedback</div>
+                    <div class="header" align="left" style="font-size:30px">Feedback</div>
+                    <div class="body" role="form" align="left">
+                        @using (Html.BeginForm())
+                        {
+                            <div class="form-group input-group">
+                                @Html.LabelFor(model => model.Name, new { @class = "control-label" })
+                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control form-control-flat clearall", @required = "required", autcomplete = "off" })
+
+                            </div>
+                            <div class="form-group input-group">
+                                @Html.LabelFor(model => model.emailId, new { @class = "control-label" })
+                                @Html.TextBoxFor(model => model.emailId, new { @class = "form-control form-control-flat clearall", @required = "required" })
+                            </div>
+                            <div class="form-group input-group">
+                                @Html.LabelFor(model => model.MobileNo, new { @class = "control-label" })
+                                @Html.TextBoxFor(model => model.MobileNo, new { @class = "form-control form-control-flat clearall" })
+                            </div>
+                            <div class="form-group input-group">
+                                @Html.LabelFor(model => model.FeedbackRes, new { @class = "control-label" })
+                                @Html.TextBoxFor(model => model.FeedbackRes, new { @class = "form-control form-control-flat clearall" })
+                            </div>
+                            <div class="form-group input-group">
+                                <input type="submit" class="btn btn-success" value="Submit" />
+                            </div>
+                        }
+                    </div>
                 </div>
             </div>
         </div>
